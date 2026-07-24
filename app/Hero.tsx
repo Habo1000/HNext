@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <header>
-      <div className="flex items-center justify-center mx-12 my-24">
-        <div className="absolute left-1/4 top-1/2 -translate-x-1/2 -translate-y-1/2 blur-3xl bg-primary/10 h-160 w-160 rounded-full"></div>
-        <div className="flex flex-col justify-baseline gap-1 max-w-170 ">
+      <div className="flex flex-col md:flex-row items-center justify-center mx-12 my-24">
+        <div className="absolute left-1/4 top-1/2 -translate-x-1/2 -translate-y-1/2 blur-3xl bg-primary/20 h-60 w-screen md:h-160 md:w-160 rounded-full"></div>
+        <div className="flex flex-col justify-baseline gap-3 md:gap-1 max-w-170 ">
           <span className="w-fit text-primary font-mono font-bold px-2.5 py-1.5 rounded-full border ">
             Solutions web
           </span>
           <hgroup>
-            <h1 className="text-6xl">
+            <h1 className="text-4xl md:text-6xl">
               Faites passer votre présence en ligne au{" "}
               <span className="font-medium">niveau supérieur.</span>
             </h1>

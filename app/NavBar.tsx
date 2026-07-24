@@ -1,9 +1,10 @@
 import Image from "next/image";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function NavBar() {
   return (
-    <nav className="border-b border-muted-foreground/30 bg-[#e8f0f2]">
-      <div className="grid grid-cols-2 items-center px-12 py-6 ">
+    <nav className="w-full border-b border-muted-foreground/30 bg-[#e8f0f2]">
+      <div className="grid grid-cols-2 items-center justify-center px-12 py-6 ">
         <div className="flex items-center">
           <Image
             src="/logo/logo_h_navbar.png"
@@ -16,7 +17,7 @@ export default function NavBar() {
             Next
           </span>
         </div>
-        <div className="">
+        <div className="hidden md:block">
           <ul className="flex items-center gap-6 text-lg font-semibold font-title">
             <li>Présentation</li>
             <li>Services</li>
@@ -26,6 +27,7 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
+        <HamburgerMenu />
       </div>
     </nav>
   );
