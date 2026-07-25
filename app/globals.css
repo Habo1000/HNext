@@ -1,5 +1,6 @@
 @import "tailwindcss";
-/* @import "tw-animate-css"; */
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -34,7 +35,8 @@
   --animate-slide-in-left: slide-in-left 0.5s ease-out;
 
   --color-border: var(--border);
-  --color-ring: var(--ring) --color-destructive: var(--destructive);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
