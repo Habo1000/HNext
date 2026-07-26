@@ -36,7 +36,7 @@ export default function Services() {
 
   return (
     <ScrollColorSection id="services">
-      <div className="grid grid-rows-1 md:grid-cols-2 px-8 md:px-12 pt-32 pb-12">
+      <div className="grid grid-rows-1 md:grid-cols-2 px-8 md:px-12 md:pt-32 py-12">
         <div className="md:sticky md:top-32 md:self-start md:pb-32">
           <hgroup className="pt-12">
             <h2 className="text-3xl">Nos services</h2>
