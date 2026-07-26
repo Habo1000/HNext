@@ -12,7 +12,7 @@ export default function HamburgerMenu() {
           <nav className="flex flex-col gap-4 mt-8 p-4 text-xl">
             <a href="#presentation">Présentation</a>
             <a href="#services">Services</a>
-            <a href="#projets">Projets</a>
+            <a href="#realisations">Réalisations</a>
             <a href="#contact">Contact</a>
           </nav>
         </SheetContent>

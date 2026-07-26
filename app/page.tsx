@@ -1,5 +1,6 @@
 import Hero from "./Hero";
 import NavBar from "./NavBar";
+import Realisations from "./Realisations";
 import Services from "./Services";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Services />
+      <Realisations />
     </main>
   );
 }

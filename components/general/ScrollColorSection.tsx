@@ -1,9 +1,17 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { PropsWithChildren, useRef } from "react";
+import { ReactNode, useRef } from "react";
 
-export default function ScrollColorSection({ children }: PropsWithChildren) {
+export default function ScrollColorSection({
+  children,
+  id,
+  className,
+}: {
+  children: ReactNode;
+  id?: string;
+  className?: string;
+}) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -12,12 +20,17 @@ export default function ScrollColorSection({ children }: PropsWithChildren) {
 
   const background = useTransform(
     scrollYProgress,
-    [0, 1],
-    ["#f6f9fa", "#268d97"],
+    [0, 0.7, 1],
+    ["#f6f9fa", "#3aa3ad", "#3aa3ad"],
   );
 
   return (
-    <motion.section ref={ref} style={{ background }} className="min-h-screen">
+    <motion.section
+      ref={ref}
+      style={{ background }}
+      className={`min-h-screen ${className ?? ""}`}
+      id={id}
+    >
       {children}
     </motion.section>
   );

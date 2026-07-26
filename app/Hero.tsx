@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <header className="relative min-h-[90dvh] md:flex md:items-center">
-      <div className="flex flex-col md:flex-row items-center justify-center mx-8 md:mx-12 py-12">
+      <div className="flex flex-col md:flex-row items-center justify-center mx-8 md:mx-12 my-12">
         <div className="absolute left-1/4 top-3/8 md:top-1/2 -translate-x-1/2 -translate-y-1/2 blur-3xl bg-primary/20 h-60 w-screen md:h-120 md:w-160 rounded-full"></div>
         <div className="flex flex-col justify-baseline gap-3 md:gap-1 max-w-170 ">
           <span className="w-fit text-primary font-mono font-bold px-2.5 py-1.5 rounded-full border ">
             Solutions web
           </span>
           <hgroup>
-            <h1 className="text-4xl md:text-6xl">
+            <h1 className="text-3xl md:text-6xl">
               Faites passer votre présence en ligne au{" "}
               <span className="font-medium">niveau supérieur.</span>
             </h1>
@@ -27,7 +27,7 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-1">
           <Image
             src="/hero/hero-1.png"
             alt="Aperçu du site Villa Serena réalisé par HNext"

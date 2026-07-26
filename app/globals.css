@@ -8,8 +8,11 @@
   --background: #f6f9fa;
   --foreground: #0f324b;
   --primary: #268d97;
-  --muted-foreground: #5b7480;
+  --muted-foreground: #46606c;
   --primary-foreground: oklch(0.985 0 0);
+
+  --card: #f6f9fa;
+  --card-foreground: oklch(0.145 0 0);
 
   --muted: oklch(0.97 0 0);
   --ring: #268d97;
@@ -33,6 +36,9 @@
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono);
   --animate-slide-in-left: slide-in-left 0.5s ease-out;
+
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
 
   --color-border: var(--border);
   --color-ring: var(--ring);
@@ -70,6 +76,11 @@
 
 body {
   font-family: var(--font-sans);
+}
+
+h1,
+h2 {
+  font-family: var(--font-title);
 }
 
 @keyframes slide-in-left {

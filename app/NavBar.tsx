@@ -19,11 +19,17 @@ export default function NavBar() {
         </div>
         <div className="hidden md:block">
           <ul className="flex items-center gap-6 text-lg font-semibold font-title">
-            <li>Présentation</li>
-            <li>Services</li>
-            <li>Projets</li>
+            <li>
+              <a href="#presentation">Présentation</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#realisations">Réalisations</a>
+            </li>
             <li className="ms-auto px-3 py-1.5 bg-primary rounded-full text-white">
-              Contact
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
