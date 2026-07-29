@@ -30,9 +30,6 @@ export const metadata: Metadata = {
     "site réservation en ligne",
   ],
 
-  authors: [{ name: "Haroune", url: "https://hnext-dev.com" }],
-  creator: "HNext",
-
   openGraph: {
     title: "HNext, Sites web sur-mesure",
     description:
