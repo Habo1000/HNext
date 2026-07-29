@@ -5,7 +5,7 @@ export default function HamburgerMenu() {
   return (
     <div className="md:hidden ms-auto flex items-center">
       <Sheet>
-        <SheetTrigger>
+        <SheetTrigger aria-label="Ouvrir le menu">
           <Menu />
         </SheetTrigger>
         <SheetContent side="right">
