@@ -9,7 +9,7 @@ export default function NavBar() {
         <div className="flex items-center">
           <Image
             src="/logo/logo_h_navbar.png"
-            alt=""
+            alt="Logo HNext"
             width="40"
             height="40"
             className="bg-transparent"
