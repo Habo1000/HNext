@@ -3,7 +3,10 @@ export default function Realisations() {
     <section className="h-screen " id="realisations">
       <div className="px-8 md:px-12 py-12">
         <hgroup className="pt-12">
-          <h2 className="text-3xl">Nos réalisations</h2>
+          <span className="w-fit font-mono font-bold px-2.5 py-1.5 rounded-full border border-border">
+            Projets
+          </span>
+          <h2 className="text-3xl mt-2">Nos réalisations</h2>
           <p className="text-xl mt-1 mb-12 text-muted-foreground">
             Quelques projets réalisés pour nos clients
           </p>

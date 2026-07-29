@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <header className="relative min-h-[90dvh] md:flex md:items-center">
+    <header className="relative min-h-[90dvh] md:flex md:items-center mt-28">
       <div className="flex flex-col md:flex-row items-center justify-center mx-8 md:mx-12 my-12">
         <div className="absolute left-1/4 top-3/8 md:top-1/2 -translate-x-1/2 -translate-y-1/2 blur-3xl bg-primary/20 h-60 w-screen md:h-120 md:w-160 rounded-full"></div>
         <div className="flex flex-col justify-baseline gap-3 md:gap-1 max-w-170 ">

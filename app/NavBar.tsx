@@ -1,9 +1,10 @@
 import Image from "next/image";
 import HamburgerMenu from "./HamburgerMenu";
+import StickyOnScroll from "@/components/general/StickyOnScroll";
 
 export default function NavBar() {
   return (
-    <nav className="w-full border-b border-muted-foreground/30 bg-[#e8f0f2]">
+    <StickyOnScroll className="w-full">
       <div className="grid grid-cols-2 items-center justify-center px-12 py-6 ">
         <div className="flex items-center">
           <Image
@@ -35,6 +36,6 @@ export default function NavBar() {
         </div>
         <HamburgerMenu />
       </div>
-    </nav>
+    </StickyOnScroll>
   );
 }

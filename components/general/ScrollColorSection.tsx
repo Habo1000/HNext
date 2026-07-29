@@ -21,14 +21,14 @@ export default function ScrollColorSection({
   const background = useTransform(
     scrollYProgress,
     [0, 0.7, 1],
-    ["#f6f9fa", "#3aa3ad", "#3aa3ad"],
+    ["#f6f9fa", "#d4e5eb", "#d4e5eb"],
   );
 
   return (
     <motion.section
       ref={ref}
       style={{ background }}
-      className={`min-h-screen ${className ?? ""}`}
+      className={`min-h-screen ${className ?? ""} `}
       id={id}
     >
       {children}
