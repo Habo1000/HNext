@@ -58,7 +58,7 @@ export default function Services() {
               logo={service.icon}
               content={service.content}
               key={service.title}
-              className={`max-w-80 ${index % 2 === 0 ? "mr-auto" : "ml-auto"}`}
+              className={`max-w-80 ${index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"}`}
             />
           ))}
         </div>

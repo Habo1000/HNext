@@ -1,9 +1,12 @@
+import { projects } from "@/data/projects";
+import RealisationsCard from "./RealisationsCard";
+
 export default function Realisations() {
   return (
     <section className="h-screen " id="realisations">
       <div className="px-8 md:px-12 py-12">
-        <hgroup className="pt-12">
-          <span className="w-fit font-mono font-bold px-2.5 py-1.5 rounded-full border border-border">
+        <hgroup className="pt-12 flex flex-col gap-1">
+          <span className="w-fit font-mono text-primary font-bold px-2.5 py-1.5 rounded-full border border-border">
             Projets
           </span>
           <h2 className="text-3xl mt-2">Nos réalisations</h2>
@@ -11,6 +14,18 @@ export default function Realisations() {
             Quelques projets réalisés pour nos clients
           </p>
         </hgroup>
+        <div className="">
+          {projects.map(({ title, description, tags, alt, image }) => (
+            <RealisationsCard
+              key={title}
+              description={description}
+              title={title}
+              tags={tags}
+              imgAlt={alt}
+              imgSrc={image}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
