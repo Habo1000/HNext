@@ -3,9 +3,24 @@ import HamburgerMenu from "./HamburgerMenu";
 import StickyOnScroll from "@/components/general/StickyOnScroll";
 
 export default function NavBar() {
+  const navItems = [
+    {
+      name: "Présentation",
+      id: "presentation",
+    },
+    {
+      name: "Services",
+      id: "sevices",
+    },
+    {
+      name: "Réalisations",
+      id: "realisations",
+    },
+  ];
+
   return (
     <StickyOnScroll className="w-full">
-      <div className="grid grid-cols-2 items-center justify-center px-12 py-6 ">
+      <nav className="grid grid-cols-2 items-center justify-center px-12 py-6 ">
         <div className="flex items-center">
           <Image
             src="/logo/logo_h_navbar.png"
@@ -20,22 +35,19 @@ export default function NavBar() {
         </div>
         <div className="hidden md:block">
           <ul className="flex items-center gap-6 text-lg font-semibold font-title">
-            <li>
-              <a href="#presentation">Présentation</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#realisations">Réalisations</a>
-            </li>
+            {navItems.map(({ name, id }) => (
+              <li>
+                <a href={`#${id}`}>{name}</a>
+              </li>
+            ))}
+
             <li className="ms-auto px-3 py-1.5 bg-primary rounded-full text-white">
               <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
         <HamburgerMenu />
-      </div>
+      </nav>
     </StickyOnScroll>
   );
 }

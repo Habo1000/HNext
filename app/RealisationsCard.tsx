@@ -34,13 +34,13 @@ export default function RealisationsCard({
       />
       <CardHeader>
         <CardTitle className="text-xl ">{title}</CardTitle>
-        <CardDescription className="mt-2 ">
-          <div className="mb-2 space-x-1">
+        <CardDescription className="mt-2 space-y-2 col-span-2">
+          <p>{description}</p>
+          <div className="mb-2 space-x-1 space-y-1 ">
             {tags.map((elem) => (
               <Badge key={elem}>{elem}</Badge>
             ))}
           </div>
-          <p>{description}</p>
         </CardDescription>
         <CardAction>
           <button>Voir plus</button>

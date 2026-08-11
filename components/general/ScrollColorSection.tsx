@@ -28,7 +28,7 @@ export default function ScrollColorSection({
     <motion.section
       ref={ref}
       style={{ background }}
-      className={`min-h-screen ${className ?? ""} `}
+      className={`${className ?? ""} `}
       id={id}
     >
       {children}

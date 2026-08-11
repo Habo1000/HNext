@@ -3,7 +3,7 @@ import RealisationsCard from "./RealisationsCard";
 
 export default function Realisations() {
   return (
-    <section className="h-screen " id="realisations">
+    <section id="realisations">
       <div className="px-8 md:px-12 py-12">
         <hgroup className="pt-12 flex flex-col gap-1">
           <span className="w-fit font-mono text-primary font-bold px-2.5 py-1.5 rounded-full border border-border">

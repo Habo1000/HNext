@@ -1,3 +1,4 @@
+import Contact from "./Contact";
 import Hero from "./Hero";
 import NavBar from "./NavBar";
 import Realisations from "./Realisations";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Realisations />
+      <Contact />
     </main>
   );
 }
