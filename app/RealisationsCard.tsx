@@ -30,7 +30,7 @@ export default function RealisationsCard({
         alt={imgAlt}
         width={1200}
         height={630}
-        className="border-b border-border "
+        className="border-b border-border w-full"
       />
       <CardHeader>
         <CardTitle className="text-xl ">{title}</CardTitle>

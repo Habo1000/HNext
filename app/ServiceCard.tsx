@@ -23,7 +23,6 @@ interface ServiceCardProps {
   content: ReactNode;
   logo: LucideIcon;
   className: string;
-  key: string;
 }
 
 export default function ServiceCard({
@@ -32,10 +31,9 @@ export default function ServiceCard({
   content,
   logo: Logo,
   className,
-  key,
 }: ServiceCardProps) {
   return (
-    <Card className={className} key={key}>
+    <Card className={className}>
       <CardHeader>
         <CardTitle>
           <div className="flex flex-col gap-2">

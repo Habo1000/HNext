@@ -36,7 +36,7 @@ export default function NavBar() {
         <div className="hidden md:block">
           <ul className="flex items-center gap-6 text-lg font-semibold font-title">
             {navItems.map(({ name, id }) => (
-              <li>
+              <li key={id}>
                 <a href={`#${id}`}>{name}</a>
               </li>
             ))}
