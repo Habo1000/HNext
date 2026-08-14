@@ -14,7 +14,7 @@ export default function HamburgerMenu() {
     },
     {
       name: "Services",
-      id: "sevices",
+      id: "services",
     },
     {
       name: "Réalisations",

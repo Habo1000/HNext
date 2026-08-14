@@ -9,7 +9,7 @@ export default function Services() {
       title: "Sites vitrines & institutionnels",
       description: "Votre présence en ligne, de A à Z",
       content:
-        "Design sur-mesure sans template, structure pensée pour le référencement et un rendu responsive sur tous les écrans. Livraison en 3 à 6 semaines selon la complexité.",
+        "Design sur-mesure sans template, structure pensée pour le référencement et un rendu responsive sur tous les écrans. Livraison dès que possible selon la complexité.",
     },
     {
       icon: CalendarCheck,
@@ -36,9 +36,9 @@ export default function Services() {
 
   return (
     <ScrollColorSection id="services">
-      <div className="grid grid-rows-1 md:grid-cols-2 px-8 md:px-12 md:pt-32 py-12">
+      <div className="grid grid-rows-1 md:grid-cols-2 px-8 md:px-12 md:pt-32 py-24">
         <div className="md:sticky md:top-32 md:self-start md:pb-32">
-          <hgroup className="max-w-80 pt-12 ">
+          <hgroup className="max-w-80">
             <span className="w-fit font-mono text-primary font-bold px-2.5 py-1.5 rounded-full border border-foreground/20">
               Services
             </span>

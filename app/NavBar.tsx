@@ -10,7 +10,7 @@ export default function NavBar() {
     },
     {
       name: "Services",
-      id: "sevices",
+      id: "services",
     },
     {
       name: "Réalisations",

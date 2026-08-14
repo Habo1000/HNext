@@ -4,8 +4,8 @@ import RealisationsCard from "./RealisationsCard";
 export default function Realisations() {
   return (
     <section id="realisations">
-      <div className="px-8 md:px-12 py-12">
-        <hgroup className="pt-12 flex flex-col gap-1">
+      <div className="px-8 md:px-12 py-24 ">
+        <hgroup className=" flex flex-col gap-1">
           <span className="w-fit font-mono text-primary font-bold px-2.5 py-1.5 rounded-full border border-border">
             Projets
           </span>
@@ -15,16 +15,19 @@ export default function Realisations() {
           </p>
         </hgroup>
         <div className="">
-          {projects.map(({ title, description, tags, alt, image }) => (
-            <RealisationsCard
-              key={title}
-              description={description}
-              title={title}
-              tags={tags}
-              imgAlt={alt}
-              imgSrc={image}
-            />
-          ))}
+          {projects.map(
+            ({ title, description, tags, alt, image, dialogDescription }) => (
+              <RealisationsCard
+                key={title}
+                description={description}
+                title={title}
+                tags={tags}
+                imgAlt={alt}
+                imgSrc={image}
+                dialogDescription={dialogDescription}
+              />
+            ),
+          )}
         </div>
       </div>
     </section>
