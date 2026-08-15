@@ -1,9 +1,10 @@
 import { projects } from "@/data/projects";
 import RealisationsCard from "./RealisationsCard";
+import ScrollColorSection from "@/components/general/ScrollColorSection";
 
 export default function Realisations() {
   return (
-    <section id="realisations">
+    <ScrollColorSection id="realisations">
       <div className="px-8 md:px-12 py-24 ">
         <hgroup className=" flex flex-col gap-1">
           <span className="w-fit font-mono text-primary font-bold px-2.5 py-1.5 rounded-full border border-border">
@@ -30,6 +31,6 @@ export default function Realisations() {
           )}
         </div>
       </div>
-    </section>
+    </ScrollColorSection>
   );
 }

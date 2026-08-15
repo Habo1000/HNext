@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="px-8 md:px-12 pt-12 md:pt-28">
+    <footer className="px-8 md:px-12 py-8 md:py-12 bg-primary/10">
       <div className="flex md:flex-row flex-col items-start justify-around gap-8 flex-wrap">
         <div className="max-w-84">
           <div className="flex items-center">
@@ -23,7 +23,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-2 sm:mt-4">
-          <p>Plan</p>
+          <p className="text-foreground font-semibold">Plan</p>
           <a
             href="/"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -50,7 +50,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-col gap-2 sm:mt-4">
-          <p className="text-foreground">Contact et Réseaux</p>
+          <p className="text-foreground font-semibold">Contact et Réseaux</p>
           <a
             href="mailto:contact@hnext-dev.com"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -84,14 +84,12 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="border-t border-foreground/10 mt-10 pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2 mx-auto">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} HNext. Tous droits réservés.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Développé avec Next.js
-          </p>
-        </div>
+      </div>
+      <div className="border-t border-foreground/10  mt-10 pt-6 flex flex-col md:flex-row md:items-center md:justify-center gap-2 mx-auto">
+        <p className="text-sm text-muted-foreground">
+          © {new Date().getFullYear()} HNext. Tous droits réservés.
+        </p>
+        <p className="text-sm text-muted-foreground">Développé avec Next.js</p>
       </div>
     </footer>
   );

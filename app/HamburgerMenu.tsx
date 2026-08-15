@@ -30,7 +30,7 @@ export default function HamburgerMenu() {
         <SheetContent side="right">
           <div className="flex flex-col gap-4 mt-8 p-4 text-xl">
             {navItems.map(({ name, id }) => (
-              <SheetClose className="text-left">
+              <SheetClose key={id} className="text-left">
                 <a href={`#${id}`}>{name}</a>
               </SheetClose>
             ))}

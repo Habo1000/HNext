@@ -1,4 +1,3 @@
-import ScrollColorSection from "@/components/general/ScrollColorSection";
 import { CalendarCheck, Globe, Lightbulb, RefreshCw } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 
@@ -35,7 +34,7 @@ export default function Services() {
   ];
 
   return (
-    <ScrollColorSection id="services">
+    <section id="services">
       <div className="grid grid-rows-1 md:grid-cols-2 px-8 md:px-12 md:pt-32 py-24">
         <div className="md:sticky md:top-32 md:self-start md:pb-32">
           <hgroup className="max-w-80">
@@ -63,6 +62,6 @@ export default function Services() {
           ))}
         </div>
       </div>
-    </ScrollColorSection>
+    </section>
   );
 }

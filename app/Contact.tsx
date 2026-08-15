@@ -1,9 +1,8 @@
-import ScrollColorSection from "@/components/general/ScrollColorSection";
 import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
-    <ScrollColorSection id="contact">
+    <section id="contact">
       <div className="px-8 md:px-12 pt-12 pb-24">
         <hgroup className="max-w-80 md:max-w-120 pt-12 ">
           <span className="w-fit font-mono text-primary font-bold px-2.5 py-1.5 rounded-full border border-foreground/20">
@@ -39,6 +38,6 @@ export default function Contact() {
           </a>
         </div>
       </div>
-    </ScrollColorSection>
+    </section>
   );
 }
