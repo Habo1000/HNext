@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HamburgerMenu from "./HamburgerMenu";
 import StickyOnScroll from "@/components/general/StickyOnScroll";
+import Link from "next/link";
 
 export default function NavBar() {
   const navItems = [
@@ -20,7 +21,7 @@ export default function NavBar() {
 
   return (
     <StickyOnScroll className="w-full">
-      <nav className="grid grid-cols-2 items-center justify-center px-12 py-6 ">
+      <nav className="flex items-center justify-between px-12 py-6">
         <div className="flex items-center">
           <Image
             src="/logo/logo_h_navbar.png"
@@ -33,19 +34,19 @@ export default function NavBar() {
             Next
           </span>
         </div>
-        <div className="hidden md:block">
-          <ul className="flex items-center gap-6 text-lg font-semibold font-title">
-            {navItems.map(({ name, id }) => (
-              <li key={id}>
-                <a href={`#${id}`}>{name}</a>
-              </li>
-            ))}
 
-            <li className="ms-auto px-3 py-1.5 bg-primary rounded-full text-white">
-              <a href="#contact">Contact</a>
+        <ul className="hidden md:flex flex-1 items-center justify-center gap-6 text-lg font-semibold font-title">
+          {navItems.map(({ name, id }) => (
+            <li key={id}>
+              <Link href={`/#${id}`}>{name}</Link>
             </li>
-          </ul>
+          ))}
+        </ul>
+
+        <div className="hidden md:block px-3 py-1.5 bg-primary rounded-full text-white font-semibold whitespace-nowrap">
+          <Link href="/#contact">Contact</Link>
         </div>
+
         <HamburgerMenu />
       </nav>
     </StickyOnScroll>

@@ -5,6 +5,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 
 export default function HamburgerMenu() {
   const navItems = [
@@ -31,11 +32,11 @@ export default function HamburgerMenu() {
           <div className="flex flex-col gap-4 mt-8 p-4 text-xl">
             {navItems.map(({ name, id }) => (
               <SheetClose key={id} className="text-left">
-                <a href={`#${id}`}>{name}</a>
+                <Link href={`/#${id}`}>{name}</Link>
               </SheetClose>
             ))}
             <SheetClose className="w-fit text-left px-3 py-1.5 bg-primary rounded-full text-white">
-              <a href="#contact">Contact</a>
+              <Link href="/#contact">Contact</Link>
             </SheetClose>
           </div>
         </SheetContent>

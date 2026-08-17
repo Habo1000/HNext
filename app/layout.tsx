@@ -5,6 +5,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 import { Analytics } from "@vercel/analytics/next";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -89,7 +91,9 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
+        <NavBar />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>

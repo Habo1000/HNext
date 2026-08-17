@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -24,30 +25,30 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-2 sm:mt-4">
           <p className="text-foreground font-semibold">Plan</p>
-          <a
+          <Link
             href="/"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             Accueil
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+            href="/#services"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             Services
-          </a>
-          <a
-            href="#projets"
+          </Link>
+          <Link
+            href="/#projets"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             Projets
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/#contact"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             Contact
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col gap-2 sm:mt-4">
           <p className="text-foreground font-semibold">Contact et Réseaux</p>
@@ -85,11 +86,17 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-foreground/10  mt-10 pt-6 flex flex-col md:flex-row md:items-center md:justify-center gap-2 mx-auto">
+      <div className="border-t border-foreground/10  mt-10 pt-6 flex flex-col md:items-center md:justify-center gap-2 mx-auto">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} HNext. Tous droits réservés.
+          © {new Date().getFullYear()} HNext. Tous droits réservés. Développé
+          avec Next.js
         </p>
-        <p className="text-sm text-muted-foreground">Développé avec Next.js</p>
+        <Link
+          href="/mentions-legales"
+          className="text-sm text-muted-foreground block"
+        >
+          Mentions légales
+        </Link>
       </div>
     </footer>
   );
