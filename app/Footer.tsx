@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -83,6 +83,14 @@ export default function Footer() {
             >
               <BsGithub size={24} />
             </a>
+            <a
+              href="https://www.instagram.com/hnextdev/"
+              target="_blank"
+              className="text-primary hover:text-foreground"
+              aria-label="Lien vers mon profil Instagram"
+            >
+              <BsInstagram size={24} />
+            </a>
           </div>
         </div>
       </div>
@@ -91,12 +99,20 @@ export default function Footer() {
           © {new Date().getFullYear()} HNext. Tous droits réservés. Développé
           avec Next.js
         </p>
-        <Link
-          href="/mentions-legales"
-          className="text-sm text-muted-foreground block"
-        >
-          Mentions légales
-        </Link>
+        <div className="flex gap-12">
+          <Link
+            href="/mentions-legales"
+            className="text-sm text-muted-foreground block"
+          >
+            Mentions légales
+          </Link>
+          <Link
+            href="/confidentialite"
+            className="text-sm text-muted-foreground block"
+          >
+            Politique de confidentialité
+          </Link>
+        </div>
       </div>
     </footer>
   );
